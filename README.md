@@ -173,10 +173,11 @@ Redis 캐싱 도입 후 nGrinder + Grafana로 수치 검증.
 | 온콜 | [java-oncall-6](https://github.com/wooqqq/java-oncall-6-wooqqq) |
 
 --- -->
-
+<!--
 <div align="center">
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=wooqqq&show_icons=true&theme=default&hide_border=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wooqqq&layout=compact&hide_border=true)
 
 </div>
+-->
