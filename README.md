@@ -44,6 +44,24 @@ SSAFY 11기 수료
 
 ### 📌 개인 프로젝트
 
+**[Curio](https://github.com/wooqqq/curio)** — 카카오톡 정보 아카이브 서비스
+
+`2026.06` · 개인 · **기획 / BE / FE / 배포**
+
+🔗 [라이브 데모](https://curio-three-ashy.vercel.app)
+
+카카오톡 채널에 링크·이미지·텍스트를 보내면 AI가 자동으로 분류·태그·요약해 정리해주는 개인 아카이브. 기획부터 배포까지 1인 개발.
+
+- 카카오 챗봇 5초 응답 제한 → 즉시 응답 후 `@Async` 백그라운드 처리 (QueueService 인터페이스로 추상화해 추후 메시지 큐 교체 가능하게 설계)
+- 카카오 OAuth2 로그인 + JWT (Access=메모리 / Refresh=httpOnly 쿠키) — XSS·URL 노출 방어
+- Vercel 리라이트 프록시로 프론트·백엔드를 same-origin으로 묶어 쿠키 보안 모델 단순화
+- OG 태그 크롤링 실패를 전제로 한 3단계 폴백 (브라우저 UA 재시도 → URL 슬러그 복원 → 재크롤 API)
+- 아이템 목록 N+1을 batch fetch로 해소 (fetch join 대신 페이지네이션 유지)
+
+[![Java](https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white)](#) [![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)](#) [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](#) [![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)](#) [![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)](#) [![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)](#) [![AWS S3](https://img.shields.io/badge/AWS_S3-569A31?style=flat-square&logo=amazons3&logoColor=white)](#)
+
+<br>
+
 **[그룹웨어 트래픽 과부하 개선](https://github.com/wooqqq/groupware-performance-test)**
 
 `2026.04` · 개인
